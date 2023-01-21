@@ -1,0 +1,167 @@
+/* General setup */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #9fff00, hsl(223, 90%, 60%));
+}
+
+/* header and footer */
+.logo,
+footer {
+    border-top: 5px solid #00ffc7;
+    border-bottom: 5px solid #e723a7;
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+footer p{
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gcc-logo {
+    width: 130px;
+    height: 135px;
+    margin-top: 8px;
+}
+.bca-logo {
+    width: 130px;
+    height: 135px;
+    margin-top: 8px;
+}
+
+h1{
+    font-family: "Nabla", cursive;
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.5em 0;
+}
+
+/*Header setup*/
+header.logo{
+    font-size: 200%;
+    padding: 50px 0;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+nav {
+    background-color: #000;
+    padding: .5em;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav a {
+    font-family: "Bitter", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 2em;
+    font-size: 1.6em;
+}
+
+/**makes the navbar stuck to top after scrolling down **/
+nav{
+    position: sticky;
+    top: 0;
+}
+  
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature img {
+    width: 25em;
+}
+
+h2, p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.more-info img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 20em;
+}
+
+@media only screen and (min-width: 900px) {
+    .feature {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 3em;
+      margin-bottom: 8em;
+      margin-left: 13em;
+    }
+    .feature img {
+      width: 25em;
+    }
+    .feature .content {
+      text-align: right;
+      width: 25em;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .feature {
+      gap: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .feature.left {
+      grid-template-areas: "left right";
+    }
+    .feature.left img {
+      grid-area: left;
+    }
+    .feature.left .content {
+      text-align: left;
+      width: 25em;
+      justify-self: left;
+    }
+  }
+
+.more-info{
+    margin-top: 8em;
+}
+
+div.footer{
+    border-top: 5px solid #00ffc7;
+    border-bottom: 5px solid #e723a7;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+div.footer p{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .desc {
+    line-height: 1.5rem;
+    font-size: ;
+  }

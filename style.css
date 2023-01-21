@@ -5,14 +5,24 @@
     box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(90deg, #9fff00, hsl(223, 90%, 60%));
+}
+
 /* header and footer */
 .logo,
 footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+    border-top: 5px solid #00ffc7;
+    border-bottom: 5px solid #e723a7;
 }
 footer{
     padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+footer p{
+    text-align: center;
 }
 
 .logo{
@@ -23,12 +33,12 @@ footer{
 .gcc-logo {
     width: 130px;
     height: 135px;
-    /* margin-right: 10.5%; */
+    margin-top: 8px;
 }
 .bca-logo {
     width: 130px;
     height: 135px;
-    /* margin-top: 1%; */
+    margin-top: 8px;
 }
 
 h1{
@@ -77,20 +87,39 @@ nav ul{
 }
 
 /*Font styles*/
+h2{
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
 h2, a{
     font-family: "Bitter", serif;
+    text-transform: uppercase;
 }
 
 p{
-    font-family: "Alice", serif;
+    font-family: "Bitter", serif;
+    font-size: 1.2em;
+    min-width: 600px;
+    max-width: 100%;
 }
 
 /*Main Content layout*/
 
 main{
+    height: 65.5vh;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
     gap: 100px;
-    justify-items: center;
     align-items: center;
+}
+
+section{
+    margin: 2rem 0 2rem 3rem;
+}
+
+/*links effects*/
+li a:hover{
+    font-size: 1.4rem;
+    color: white;
 }
